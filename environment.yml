@@ -35,7 +35,7 @@ dependencies:
   - xarray=0.19.0
   - datashader=0.13.0
   - param=1.11.1
-  - panel=0.12.5
+  - panel=0.12.1
   - rasterio=1.2.6
   - rasterstats=0.15.0
   - earthpy=0.9.2
