@@ -49,9 +49,11 @@ Heroku makes deployment of arbitrary apps including Panel apps and dashboards ve
 
 To get started working with Heroku [signup](https://signup.heroku.com) for a free account and [download and install the CLI](https://devcenter.heroku.com/articles/getting-started-with-python#set-up). Once you are set up follow the instructions to log into the CLI.
 
-1. Add a "requirements.txt" file to your dashboard's repository that includes all of the requirements for your project. These will be installed using `pip` on Heroku.
+1. Log in to heroku on the command line by running `heroku login`. This should prompt you to open a browser and you can log in with your credentials.
 
-2. Add a `Procfile` file to your repository, which declares which command Heroku should run to serve the app. In this repository, the following command serves the `app2.ipynb` example and the websocket origin should match the name of the app on Heroku `app-name.herokuapp.com` which you will declare in the next step:
+2. Add a "requirements.txt" file to your dashboard's repository that includes all of the requirements for your project. These will be installed using `pip` on Heroku.
+
+3. Add a `Procfile` file to your repository, which declares which command Heroku should run to serve the app. In this repository, the following command serves the `app2.ipynb` example and the websocket origin should match the name of the app on Heroku `app-name.herokuapp.com` which you will declare in the next step:
 
 ```
 web: panel serve --address="0.0.0.0" --port=$PORT app2.ipynb --allow-websocket-origin=app-name.herokuapp.com
