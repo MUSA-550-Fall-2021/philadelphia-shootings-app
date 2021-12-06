@@ -42,6 +42,7 @@ This dashboard includes:
 The app has also been deployed on Heroku: https://philadelphia-shootings.herokuapp.com/
 
 ![App #2 Dashboard](./assets/dashboard_screenshot_app2.png)
+![App #2 Dashboard](./assets/dashboard_screenshot_app3.png)
 
 ## Deploying this app on Heroku
 
