@@ -76,7 +76,7 @@ Again, "app-name" should be whatever you chose in the last step.
    command from the command line:
 
 ```
-git push heroku master
+git push heroku
 ```
 
 7. Visit the app at app-name.herokuapp.com
