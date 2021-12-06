@@ -51,9 +51,12 @@ To get started working with Heroku [signup](https://signup.heroku.com) for a fre
 
 1. Log in to heroku on the command line by running `heroku login`. This should prompt you to open a browser and you can log in with your credentials.
 
-2. Add a "requirements.txt" file to your dashboard's repository that includes all of the requirements for your project. These will be installed using `pip` on Heroku.
+2. Add a "runtime.txt" file that has the name of the Python version you wish to use. To match the Python
+   version used in this class, add a single line with the text "python-3.8.10".
 
-3. Add a `Procfile` file to your repository, which declares which command Heroku should run to serve the app. In this repository, the following command serves the `app2.ipynb` example and the websocket origin should match the name of the app on Heroku `app-name.herokuapp.com` which you will declare in the next step:
+3. Add a "requirements.txt" file to your dashboard's repository that includes all of the requirements for your project. These will be installed using `pip` on Heroku.
+
+4. Add a `Procfile` file to your repository, which declares which command Heroku should run to serve the app. In this repository, the following command serves the `app2.ipynb` example and the websocket origin should match the name of the app on Heroku `app-name.herokuapp.com` which you will declare in the next step:
 
 ```
 web: panel serve --address="0.0.0.0" --port=$PORT app2.ipynb --allow-websocket-origin=app-name.herokuapp.com
@@ -61,7 +64,7 @@ web: panel serve --address="0.0.0.0" --port=$PORT app2.ipynb --allow-websocket-o
 
 In this repository, I have specified "app-name" as "philadelphia-shootings" but you should replace your "app-name" with whatever you want yours to be.
 
-4. Create a heroku app using the CLI ensuring that the name matches the URL we declared in the previous step:
+5. Create a heroku app using the CLI ensuring that the name matches the URL we declared in the previous step:
 
 ```
 heroku create app-name
@@ -69,11 +72,11 @@ heroku create app-name
 
 Again, "app-name" should be whatever you chose in the last step.
 
-5. Push the app to heroku and wait until it is deployed. From the main folder of your repository, run the following
+6. Push the app to heroku and wait until it is deployed. From the main folder of your repository, run the following
    command from the command line:
 
 ```
 git push heroku master
 ```
 
-6. Visit the app at app-name.herokuapp.com
+7. Visit the app at app-name.herokuapp.com

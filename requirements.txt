@@ -1,5 +1,5 @@
 panel==0.12.1
-geopandas==0.9.0
+geopandas==0.10.2
 folium
 altair==4.1.0
 notebook==6.4.3
